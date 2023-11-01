@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 # Load the dataset (assuming you have it saved in a CSV file)
 @st.cache_data  # Use st.cache for data caching
 def load_data():
-    df = pd.read_csv("/Users/shreyamahajan/Desktop/college/dslproj/preprocessed_data.csv", encoding='utf-8')
+    df = pd.read_csv("preprocessed_data.csv", encoding='utf-8')
     return df
 
 df_train = load_data()
