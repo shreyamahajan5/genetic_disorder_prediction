@@ -21,7 +21,7 @@ def main():
     st.sidebar.header("User Input")
 
     selected_features = st.sidebar.multiselect("Select Features", df_train.columns, default=["Status"])
-    st.sidebar.subheader("Please select Disorder Subclass for prediction.")
+    st.sidebar.subheader("Please select Disorder Subclass at last for prediction.")
 
     # Check if both 'Status' and 'Disorder Subclass' are in selected features
     if 'Status' in selected_features:
