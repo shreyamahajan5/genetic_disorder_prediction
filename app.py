@@ -19,8 +19,6 @@ def main():
     # Sidebar for user input
     st.sidebar.header("User Input")
     # Add disclaimer in sidebar
-    st.sidebar.markdown("---")
-    st.sidebar.info("**Educational demo purposes only** – data is based on a dataset retrieved from Kaggle.")
 
     # Always include 'Disorder Subclass' in the features
     default_features = ["Disorder Subclass"]
@@ -88,6 +86,8 @@ def main():
                 st.markdown("**6: Hemochromatosis** – Excess iron buildup.")
                 st.markdown("**7: Mitochondrial myopathy** – Muscle/energy production issues.")
                 st.markdown("**8: Alzheimer's** – Memory and cognitive decline.")
+             #   st.sidebar.markdown("---")
+                st.sidebar.info("**Educational demo purposes only** – data is based on a dataset retrieved from Kaggle.")
 
         if st.button("Predict"):
             input_data = pd.DataFrame([user_input])
