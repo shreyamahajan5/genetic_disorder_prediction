@@ -44,7 +44,15 @@ It uses a K-Nearest Neighbors (KNN) classifier trained on labeled data.
    ```bash
    git clone https://github.com/your-username/genetic_disorder_prediction.git
    cd genetic_disorder_prediction
+
+2. Install dependencies:
+    ```bash
    pip install -r requirements.txt
+
+3. Place preprocessed_data.csv in the root directory.
+
+4. Run the app:
+ ```bash
    streamlit run app.py
 
-   
+ 
