@@ -18,6 +18,9 @@ def main():
 
     # Sidebar for user input
     st.sidebar.header("User Input")
+    # Add disclaimer in sidebar
+    st.sidebar.markdown("---")
+    st.sidebar.info("**Educational demo purposes only** – data is based on a dataset retrieved from Kaggle.")
 
     # Always include 'Disorder Subclass' in the features
     default_features = ["Disorder Subclass"]
